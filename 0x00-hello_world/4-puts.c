@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - entry pint
- * return: 0 number
+ * Return: 0 number
  */
 int main(void)
 {
