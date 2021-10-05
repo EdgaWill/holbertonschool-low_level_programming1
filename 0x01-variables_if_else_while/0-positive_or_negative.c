@@ -3,7 +3,7 @@
 #include <time.h>
 /**
  * main - generator random number
- * 
+ *
  * Return: 0
  */
 int main(void)
