@@ -1,8 +1,7 @@
 #include "main.h"
-int fun_srqt(int n, int a);
 
 /**
- * _pow_recursion - x raised to the power of y
+ * fun_srqt - function that returns the natural square root of a number.
  * @n: integer number
  * @a: integer number
  *
@@ -14,7 +13,7 @@ int fun_srqt(int n, int a)
 	return (((a - 2) + 1) / 2);
 	else if (n < 0)
 		return (-1);
-	n-=a;
+	n - = a;
 	return (fun_srqt(n, a + 2));
 }
 
@@ -31,5 +30,5 @@ int _sqrt_recursion(int n)
 	else if (n < 0)
 	return (-1);
 	return (fun_srqt(n, 1));
-						
+
 }
