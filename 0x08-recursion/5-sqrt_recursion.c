@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * fun_srqt - function that returns the natural square root of a number.
+ * fun_srqt - x raised to the power of y
  * @n: integer number
  * @a: integer number
  *
