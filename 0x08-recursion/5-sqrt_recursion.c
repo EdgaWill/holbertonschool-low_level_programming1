@@ -14,7 +14,7 @@ int fun_srqt(int n, int a)
 	return (((a - 2) + 1) / 2);
 	else if (n < 0)
 		return (-1);
-	n - = a;
+	n -= a;
 	return (fun_srqt(n, a + 2));
 }
 
@@ -27,9 +27,9 @@ int fun_srqt(int n, int a)
 int _sqrt_recursion(int n)
 {
 	if (n == 0)
-	return (0);
+		return (0);
 	else if (n < 0)
-	return (-1);
+		return (-1);
 	return (fun_srqt(n, 1));
 
 }
