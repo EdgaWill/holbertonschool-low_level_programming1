@@ -1,4 +1,5 @@
 #include "main.h"
+int fun_srqt(int n, int a);
 
 /**
  * fun_srqt - x raised to the power of y
