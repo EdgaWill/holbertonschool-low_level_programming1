@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - argc & argv d
+ * main - argc & argv
  * @argc: int
  * @argv: pointer
  * Return: 0
@@ -13,9 +13,7 @@ int main(int argc, char *argv[])
 	for (i = 0; i < argc && argv[i]; i++)
 	{
 		count = i;
-
 	}
 	printf("%d\n", count);
-
 	return (0);
 }
