@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
-	for (x=0; x < bytes; x++)
+	for (x = 0; x < bytes; x++)
 	{
 		printf("%02hhx", file[x]);
 		if (x != bytes - 1)
