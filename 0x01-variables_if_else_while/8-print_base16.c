@@ -21,6 +21,6 @@ int main(void)
 		s++;
 	}
 	putchar(10);
-	
+
 	return (0);
 }
