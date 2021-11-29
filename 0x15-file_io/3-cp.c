@@ -4,6 +4,11 @@
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * check_read_err - program that copies the content of a file to another file
+ * @status: int paramenter
+ * @filename: char paramenter
+ */
 
 void check_read_err(int status, char *filename)
 {
@@ -13,7 +18,12 @@ void check_read_err(int status, char *filename)
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 	exit(98);
 }
-
+/**
+ * check_write_err - Write a program that copies the content of a file
+ * to another file
+ * @status: int
+ * @filename: char
+ */
 void check_write_err(int status, char *filename)
 {
 	if (status != -1)
@@ -22,7 +32,11 @@ void check_write_err(int status, char *filename)
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
 	exit(99);
 }
-
+/**
+ * close_fd - Write a program that copies the content of a file
+ * to another file
+ * @fd: int
+ */
 void close_fd(int fd)
 {
 	int close_stat;
@@ -35,6 +49,13 @@ void close_fd(int fd)
 	exit(100);
 }
 
+/**
+ * main - Write a program that copies the content of a file
+ * to another file
+ * @ac: int
+ * @av: char
+ * Return: 0
+ */
 int main(int ac, char **av)
 {
 	int fd_from, fd_to;
