@@ -5,12 +5,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/**
- * check_read_err - Write a program that copies the content of a file
- * status - int paramenter
- * filename: char paramenter
- * Return: Always 0 (Success)
- */
 void check_read_err(int status, char *filename)
 {
 	if (status != -1)
