@@ -1,13 +1,13 @@
 #include<stdio.h>
 /**
- * main -  program that prints exactly
+ * main - Entry point
  *
- * Return: Always 0 (Success)
- *
+ * Return: 1
  */
 int main(void)
 {
-	char er[59] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	fwrite(er, 59, 1, stderr);
+	char i[59] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+
+	fwrite(i, 59, 1, stderr);
 	return (1);
 }
