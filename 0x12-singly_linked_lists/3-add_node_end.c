@@ -13,6 +13,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	size_t len = 0;
 
 	for (len = 0; *(str + len); len++)
+	{}
 
 	ptr = malloc(sizeof(list_t));
 	if (ptr == NULL)
