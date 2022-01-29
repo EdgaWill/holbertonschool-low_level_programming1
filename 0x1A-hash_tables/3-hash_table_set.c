@@ -8,7 +8,7 @@
  * @key: pointer
  * @value: pointer
  *
- * Return: 1 if it succeeded, 0
+ * Return: 1 if it succeeded,
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
