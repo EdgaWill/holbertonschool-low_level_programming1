@@ -12,15 +12,15 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int hash_index;
+	unsigned long int index;
 	hash_node_t *nodes, *header, *unode_1;
 
 
 	if (!strcmp(key, "") || !key || !strcmp(value, "") || !value)
 		return (0);
 
-	hash_index = key_index((unsigned char *)key, ht->size);
-	header = ht->array[hash_index];
+	index = key_index((unsigned char *)key, ht->size);
+	header = ht->array[index];
 	unode_1 = header;
 
 	while (unode_1)
@@ -44,6 +44,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	header = nodes;
 
-	ht->array[hash_index] = header;
+	ht->array[index] = header;
 	return (1);
 }
